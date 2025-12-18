@@ -49,8 +49,8 @@ nano ~/.bashrc
 在文件末尾添加以下内容：
 Bash
 # SSH Tunnel Proxy Settings
-export http_proxy=[http://127.0.0.1:7890]
-export https_proxy=[http://127.0.0.1:7890]
+export http_proxy=http://127.0.0.1:7890
+export https_proxy=http://127.0.0.1:7890
 # 只有当 SSH 隧道建立时，上述代理才生效
 
 
@@ -83,7 +83,8 @@ netstat -anp | grep 7890
 Bash
 
 
-curl -I [https://www.google.com](https://www.google.com)
+curl -I https://www.google.com
+curl -I https://www.baidu.com
 # 成功输出示例：HTTP/1.1 200 OK (或 301 Moved Permanently)
 
 
